@@ -35,12 +35,10 @@
 
 + (NSString *) convertToString:(NSInteger)a
 {
-    switch (a) {
-        case 1: return @"one";
-        case 2: return @"two";
-        case 3: return @"three";
-        case 4: return @"four";
-    }
+    if (a == 1) return @"one";
+    if (a == 2) return @"two";
+    if (a == 3) return @"three";
+    if (a == 4) return @"four";
     
     return nil;
 }
