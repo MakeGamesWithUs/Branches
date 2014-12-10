@@ -8,7 +8,9 @@
 
 #import "Solution.h"
 
-@implementation Solution
+@implementation Solution {
+    
+}
 
 // compare return should be:
 // > 0 if a > b
