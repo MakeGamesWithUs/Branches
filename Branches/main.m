@@ -24,20 +24,22 @@ int main(int argc, const char * argv[]) {
             NSLog(@"Compare gave an unexpected result.");
         }
         
-        if (![[Solution convertToString:1] isEqualTo:@"one"]) {
-            NSLog(@"convertToString gave an unexpected result.");
-        }
-        
-        if (![[Solution convertToString:2] isEqualTo:@"two"]) {
-            NSLog(@"convertToString gave an unexpected result.");
-        }
-        
-        if (![[Solution convertToString:3] isEqualTo:@"three"]) {
-            NSLog(@"convertToString gave an unexpected result.");
-        }
-        
-        if (![[Solution convertToString:4] isEqualTo:@"four"]) {
-            NSLog(@"convertToString gave an unexpected result.");
+        for (int i = 1; i < 100; ++i) {
+            id expected;
+            
+            if (i % 5 == 0 && i % 3 == 0)
+                expected = @"FizzBuzz";
+            else if (i % 3 == 0)
+                expected = @"Fizz";
+            else if (i % 5 == 0)
+                expected = @"Buzz";
+            else
+                expected = @(i);
+            
+            if (![[Solution fizzBuzz:i] isEqualTo:expected]) {
+                NSLog(@"FizzBuzz gave an unexpected result.");
+                break;
+            }
         }
     }
     return 0;

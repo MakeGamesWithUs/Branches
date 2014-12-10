@@ -27,20 +27,22 @@
 }
 
 // should return:
-// "one"   if a == 1
-// "two"   if a == 2
-// "three" if a == 3
-// "four"  if a == 4
+// Fizz if a is divisible by 3
+// Buzz if a is divisible by 5
+// FizzBuzz if a is divisible by 3 and 5
+// Otherwise, it should return a.
 // And not use ANY branches.
 
-+ (NSString *) convertToString:(NSInteger)a
++ (id) fizzBuzz:(NSInteger)a
 {
-    if (a == 1) return @"one";
-    if (a == 2) return @"two";
-    if (a == 3) return @"three";
-    if (a == 4) return @"four";
+    if (a % 5 == 0 && a % 3 == 0)
+        return @"FizzBuzz";
+    else if (a % 3 == 0)
+        return @"Fizz";
+    else if (a % 5 == 0)
+        return @"Buzz";
     
-    return nil;
+    return @(a);
 }
 
 @end

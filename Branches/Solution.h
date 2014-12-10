@@ -10,7 +10,7 @@
 
 @interface Solution : NSObject
 
-+ (NSInteger)compare:(NSInteger)a to:(NSInteger)b;
-+ (NSString *) convertToString:(NSInteger)a;
++ (NSInteger) compare:(NSInteger)a to:(NSInteger)b;
++ (id) fizzBuzz:(NSInteger)a;
 
 @end
