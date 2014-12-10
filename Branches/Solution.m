@@ -18,6 +18,11 @@
 
 + (NSInteger)compare:(NSInteger)a to:(NSInteger)b
 {
+    if (a > b)
+        return 1;
+    else if (a < b)
+        return -1;
+    
     return 0;
 }
 
@@ -30,6 +35,13 @@
 
 + (NSString *) convertToString:(NSInteger)a
 {
+    switch (a) {
+        case 1: return @"one";
+        case 2: return @"two";
+        case 3: return @"three";
+        case 4: return @"four";
+    }
+    
     return nil;
 }
 
