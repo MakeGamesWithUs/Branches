@@ -51,6 +51,24 @@
     return 0;
 }
 
+// logNumbers should print out:
+// Small  if the number is [1, 100]
+// Medium if the number is [101, 500]
+// Large  if the number is [501, 1000]
+// Remove as many branches as possible.
+
++ (void)logNumbers
+{
+    for (int i = 1; i <= 1000; ++i) {
+        if (i <= 100)
+            NSLog(@"Small");
+        else if (i <= 500)
+            NSLog(@"Medium");
+        else
+            NSLog(@"Large");
+    }
+}
+
 // fizzBuzz should return:
 // Fizz     if a is divisible by 3
 // Buzz     if a is divisible by 5
