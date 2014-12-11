@@ -23,18 +23,6 @@
     }
 }
 
-// oddOrEven should return:
-// odd  if a is odd
-// even if a is even
-// And not use ANY branches.
-
-+ (NSString *)oddOrEven:(NSInteger)a {
-    if (a % 2 == 0)
-        return @"even";
-    else
-        return @"odd";
-}
-
 // compare should return:
 // > 0 if a > b
 // < 0 if a < b
@@ -49,6 +37,18 @@
         return -1;
     
     return 0;
+}
+
+// oddOrEven should return:
+// odd  if a is odd
+// even if a is even
+// And not use ANY branches.
+
++ (NSString *)oddOrEven:(NSInteger)a {
+    if (a % 2 == 0)
+        return @"even";
+    else
+        return @"odd";
 }
 
 // logNumbers should print out:
