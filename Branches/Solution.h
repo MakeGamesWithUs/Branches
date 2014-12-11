@@ -10,6 +10,7 @@
 
 @interface Solution : NSObject
 
++ (void)sayHello;
 + (NSInteger) compare:(NSInteger)a to:(NSInteger)b;
 + (id) fizzBuzz:(NSInteger)a;
 

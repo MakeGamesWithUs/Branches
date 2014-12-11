@@ -8,11 +8,22 @@
 
 #import "Solution.h"
 
-@implementation Solution {
-    
+@implementation Solution
+
+// sayHello should print out:
+// hello
+// hello
+// hello
+// And not use ANY branches.
+
++ (void)sayHello
+{
+    for (int i = 0; i < 3; ++i) {
+        NSLog(@"hello");
+    }
 }
 
-// compare return should be:
+// compare should return:
 // > 0 if a > b
 // < 0 if a < b
 // = 0 if a = b
@@ -28,7 +39,7 @@
     return 0;
 }
 
-// should return:
+// fizzBuzz should return:
 // Fizz if a is divisible by 3
 // Buzz if a is divisible by 5
 // FizzBuzz if a is divisible by 3 and 5
