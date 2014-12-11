@@ -24,6 +24,18 @@ int main(int argc, const char * argv[]) {
             NSLog(@"Compare gave an unexpected result.");
         }
         
+        for (int i = 0; i < 100; ++i) {
+            NSString *expected = @"odd";
+            
+            if (i % 2 == 0)
+                expected = @"even";
+            
+            if (![[Solution oddOrEven:i] isEqualTo:expected]) {
+                NSLog(@"OddOrEven gave an unexpected result.");
+                break;
+            }
+        }
+        
         for (int i = 1; i < 100; ++i) {
             id expected;
             

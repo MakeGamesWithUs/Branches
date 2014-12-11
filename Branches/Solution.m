@@ -23,6 +23,17 @@
     }
 }
 
+// oddOrEven should return:
+// odd  if a is odd
+// even if a is even
+
++ (NSString *)oddOrEven:(NSInteger)a {
+    if (a % 2 == 0)
+        return @"even";
+    else
+        return @"odd";
+}
+
 // compare should return:
 // > 0 if a > b
 // < 0 if a < b
@@ -40,8 +51,8 @@
 }
 
 // fizzBuzz should return:
-// Fizz if a is divisible by 3
-// Buzz if a is divisible by 5
+// Fizz     if a is divisible by 3
+// Buzz     if a is divisible by 5
 // FizzBuzz if a is divisible by 3 and 5
 // Otherwise, it should return a.
 // And not use ANY branches.

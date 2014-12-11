@@ -11,6 +11,7 @@
 @interface Solution : NSObject
 
 + (void)sayHello;
++ (NSString *)oddOrEven:(NSInteger)a;
 + (NSInteger) compare:(NSInteger)a to:(NSInteger)b;
 + (id) fizzBuzz:(NSInteger)a;
 
