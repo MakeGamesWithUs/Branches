@@ -51,7 +51,7 @@
         return @"odd";
 }
 
-// logNumbers should print out:
+// logNumbers should iterate from 1 to max and print out:
 // Small  if the number is [1, 100]
 // Medium if the number is [101, 500]
 // Large  if the number is [501, +infinity]
