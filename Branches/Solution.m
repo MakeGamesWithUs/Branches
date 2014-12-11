@@ -26,6 +26,7 @@
 // oddOrEven should return:
 // odd  if a is odd
 // even if a is even
+// And not use ANY branches.
 
 + (NSString *)oddOrEven:(NSInteger)a {
     if (a % 2 == 0)
