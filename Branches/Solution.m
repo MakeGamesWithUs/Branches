@@ -54,12 +54,12 @@
 // logNumbers should print out:
 // Small  if the number is [1, 100]
 // Medium if the number is [101, 500]
-// Large  if the number is [501, 1000]
+// Large  if the number is [501, +infinity]
 // Remove as many branches as possible.
 
-+ (void)logNumbers
++ (void)logNumbersUpto:(NSInteger)max
 {
-    for (int i = 1; i <= 1000; ++i) {
+    for (int i = 1; i <= max; ++i) {
         if (i <= 100)
             NSLog(@"Small");
         else if (i <= 500)
