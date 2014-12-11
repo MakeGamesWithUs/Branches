@@ -12,6 +12,8 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
+        [Solution sayHello];
+        
         if ([Solution compare:1 to:5] >= 0) {
             NSLog(@"Compare gave an unexpected result.");
         }
